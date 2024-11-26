@@ -1,0 +1,3 @@
+this is my input text
+this is unencrypted here. 
+ok ok ok lets see what is up with this thing.
