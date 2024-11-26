@@ -28,20 +28,13 @@ pip install cryptography
 ### Examples
 #### Encrypting a File
 ```bash
-python script_name.py encrypt input.txt encrypted.bin my_password
+python main.py encrypt in.txt out.txt my_password
 ```
-- Encrypts `input.txt` into `encrypted.bin` using `my_password`.
+- Encrypts `in.txt` into `out.txt` using `my_password`.
 
 #### Decrypting a File
 ```bash
-python script_name.py decrypt encrypted.bin decrypted.txt my_password
+python main.py decrypt out.txt re_in.txt my_password
 ```
-- Decrypts `encrypted.bin` into `decrypted.txt` using `my_password`.
-
-## File Format for Encrypted Files
-Encrypted files contain the following components in sequence:
-1. **Salt**: 16 bytes (used for key derivation).
-2. **IV**: 16 bytes (used for AES CBC mode).
-3. **Ciphertext**: The encrypted content of the file.
-
+- Decrypts `out.txt` into `re_in.txt` using `my_password`.
 
